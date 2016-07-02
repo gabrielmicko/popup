@@ -24,19 +24,25 @@ _popUp.open({
 ```
 
 ### More examples
+Put the example code before </head> tag.
+
 Opening the popup on window load
 ```javascript
+<script>
 window.addEventListener('load', function() {
     _popUp.open();
 });
+</script>
 ```
 
 Opening the popup after load + few seconds
 ```javascript
+<script>
 var secondsUntilLoad = 3000;
 window.addEventListener('load', function() {
     setTimeout(function(){
         _popUp.open();
     },secondsUntilLoad);
 });
+</script>
 ```
