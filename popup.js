@@ -23,14 +23,14 @@ var _popUp = {
         }
     },
     getFramceCSS: function() {
-        return Array.concat([
+        return [
             'position: fixed',
             'top: 50%',
             'left: 50%'
-        ], this.options.frameCSS).join(';');
+        ].join(';');
     },
     getOverlayCSS: function() {
-        return Array.concat([
+        return [
             'background-color: ' + this.options.css.bgcolor,
             'width: 100%',
             'height: 100%',
@@ -38,7 +38,7 @@ var _popUp = {
             'left: 0',
             'top: 0',
             'opacity: ' + this.options.css.opacity
-        ], this.options.overlayCSS).join(';');
+        ].join(';');
     },
     getHTML: function() {
         var html = '<div class="_popUpOverlay" style="' + this.getOverlayCSS() + '"></div>';
