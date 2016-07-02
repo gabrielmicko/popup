@@ -10,16 +10,16 @@ var _popUp = {
         }
     },
     setOptions: function(options) {
-        if(options.opacity) {
-          this.options.css.opacity = options.opacity;
+        if (options.opacity) {
+            this.options.css.opacity = options.opacity;
         }
 
-        if(options.bgcolor) {
-          this.options.css.bgcolor = options.bgcolor;
+        if (options.bgcolor) {
+            this.options.css.bgcolor = options.bgcolor;
         }
 
-        if(options.content) {
-          this.options.content = options.content;
+        if (options.content) {
+            this.options.content = options.content;
         }
     },
     getFramceCSS: function() {
@@ -46,13 +46,13 @@ var _popUp = {
     },
     countContentSize: function() {
         var frameElement = document.querySelector('._popUpFrame');
-        frameElement.style.marginLeft = '-' + frameElement.offsetWidth/2 + 'px';
-        frameElement.style.marginTop = '-' + frameElement.offsetHeight/2 + 'px';
+        frameElement.style.marginLeft = '-' + frameElement.offsetWidth / 2 + 'px';
+        frameElement.style.marginTop = '-' + frameElement.offsetHeight / 2 + 'px';
 
     },
     open: function(options) {
-        if(typeof options !== 'undefined') {
-          this.setOptions(options);
+        if (typeof options !== 'undefined') {
+            this.setOptions(options);
         }
         this.status = true;
         var holderElement = document.createElement('div');
@@ -87,9 +87,3 @@ var _popUp = {
         }
     }
 };
-
-window.addEventListener('load', function() {
-    _popUp.open({
-      'bgcolor': 'red'
-    });
-});
