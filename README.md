@@ -1,5 +1,8 @@
 # Popup for any website (WordPress)
+```html
 To use include this js file inside the <head> tag.
+```
+
 ```html
 <script src="popup.js"></script>
 ```
@@ -24,8 +27,9 @@ _popUp.open({
 ```
 
 ### More examples
+```html
 Put the example code before </head> tag.
-
+```
 Opening the popup on window load
 ```javascript
 <script>
